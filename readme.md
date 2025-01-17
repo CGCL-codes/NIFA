@@ -48,7 +48,9 @@ Run the following code to install all required packages.
 
 ## Run the codes
 
-All arguments are properly set below for reproducing our results. 
+### Evaluation of classic GNN models
+
+All arguments are properly set below for reproducing our results on four classic GNN models. 
 
 ```
 python main.py --dataset pokec_z --alpha 0.01 --beta 4 --node 102 --edge 50 --before --device 0 --models 'GCN' 'GraphSAGE' 'APPNP' 'SGC'
@@ -58,9 +60,9 @@ python main.py --dataset pokec_n --alpha 0.01 --beta 4 --node 87 --edge 50 --bef
 python main.py --dataset dblp --alpha 0.1 --beta 8 --node 32 --edge 24 --epochs 500 --before --device 2 --models 'GCN' 'GraphSAGE' 'APPNP' 'SGC'
 ```
 
-### Evaluation on fair GNN models
+### Evaluation of fair GNN models
 
-Since FairGNN, FairVGNN, and FairSIN have been independently open-sourced, we have not included a unified integration of these models in our repository yet. Their official repositories are listed below:
+Since FairGNN, FairVGNN, and FairSIN have been independently open-sourced, we have not included a unified integration of these models in our repository yet. For the convenience of reproducing our results on these models, we summarize their official repositories below:
 
 | MODEL      | Repository |
 | ---------- | ---------- |
